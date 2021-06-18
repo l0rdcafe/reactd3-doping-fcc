@@ -2,7 +2,7 @@
 
 ## How it looks
 
-![screenshot showing color-scaled scatterplot of bikers with doping allegations](looks.png)
+![screenshot showing color-scaled scatterplot of bikers with doping allegations](how_it_looks.png)
 
 ## How it runs
 
