@@ -13,6 +13,8 @@ const margin = {
 const dotRadius = 6;
 const svgWidth = 900;
 const svgHeight = 600;
+const yOffset = 220;
+const xOffset = 250;
 
 const App = () => {
   const [bikers, setBikers] = useState([]);
@@ -169,7 +171,10 @@ const App = () => {
               fill={colorScale(biker.Doping !== "")}
               onMouseOver={(e) => {
                 setSelectedBiker(biker);
-                setPos({ xPos: e.clientX + 28, yPos: e.clientY + 28 });
+                setPos({
+                  xPos: xScale(biker.Year) + xOffset,
+                  yPos: yScale(biker.Time) + yOffset,
+                });
               }}
               onMouseOut={() => {
                 setSelectedBiker(null);
